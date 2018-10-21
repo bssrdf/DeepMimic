@@ -264,7 +264,7 @@ def mouse_move(x, y):
     return
 
 def init_draw():
-    glutInit()  
+    glutInit(sys.argv)  
     
     glutInitContextVersion(3, 2)
     glutInitContextFlags(GLUT_FORWARD_COMPATIBLE)
@@ -273,18 +273,18 @@ def init_draw():
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH)
     glutInitWindowSize(win_width, win_height)
     glutCreateWindow(b'DeepMimic')
+    
     return
     
 def setup_draw():
-    glutDisplayFunc(draw)
-    glutReshapeFunc(reshape)
-    glutKeyboardFunc(keyboard)
-    glutMouseFunc(mouse_click)
-    glutMotionFunc(mouse_move)
-    glutTimerFunc(display_anim_time, animate, 0)
-
-    reshape(win_width, win_height)
-    world.env.reshape(win_width, win_height)
+    glutDisplayFunc(draw)    
+    glutReshapeFunc(reshape)    
+    glutKeyboardFunc(keyboard)    
+    glutMouseFunc(mouse_click)    
+    glutMotionFunc(mouse_move)    
+    glutTimerFunc(display_anim_time, animate, 0)    
+    reshape(win_width, win_height)    
+    world.env.reshape(win_width, win_height)   
     
     return
 

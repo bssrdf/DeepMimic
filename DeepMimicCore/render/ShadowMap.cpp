@@ -1,4 +1,6 @@
+#include <algorithm>
 #include "ShadowMap.h"
+
 
 cShadowMap::cShadowMap(void)
 {

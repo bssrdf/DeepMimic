@@ -56,7 +56,7 @@ void cDrawMesh::Draw(GLenum primitive, int idx_start, int idx_end)
 {
 	mState.BindVAO();
 	SyncGPU(0, 0);
-	int num_elem = std::min(idx_end, mNumElem) - idx_start;
+	int num_elem = std::min(idx_end, mNumElem) - idx_start;	
 	cDrawUtil::LoadShaderUniforms();
 	glDrawElements(primitive, num_elem, GL_UNSIGNED_INT, (void*)(idx_start * sizeof(GLuint)));
 }

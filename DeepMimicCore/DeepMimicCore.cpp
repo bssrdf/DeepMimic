@@ -115,11 +115,11 @@ void cDeepMimicCore::MouseMove(int x, int y)
 }
 
 void cDeepMimicCore::Reshape(int w, int h)
-{
-	mScene->Reshape(w, h);
-	mDefaultFrameBuffer->Reshape(w, h);
-	glViewport(0, 0, w, h);
-	glutPostRedisplay();
+{	
+	mScene->Reshape(w, h);	
+	mDefaultFrameBuffer->Reshape(w, h);	
+	glViewport(0, 0, w, h);	
+	//glutPostRedisplay();	
 }
 
 void cDeepMimicCore::Shutdown()

@@ -1,5 +1,6 @@
 #include "TextureDesc.h"
 #include <assert.h>
+#include <algorithm>
 #include "lodepng/lodepng.h"
 
 std::stack<cTextureDesc::tTexEntry> cTextureDesc::gTexStack = std::stack<cTextureDesc::tTexEntry>();

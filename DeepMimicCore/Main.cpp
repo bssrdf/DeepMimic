@@ -332,14 +332,17 @@ void InitFrameBuffers(void)
 void InitDraw(int argc, char** argv)
 {
 	glutInit(&argc, argv);
-
+			
 	glutInitContextVersion(3, 2);
 	glutInitContextFlags(GLUT_FORWARD_COMPATIBLE);
 	glutInitContextProfile(GLUT_CORE_PROFILE);
 
+	printf("glut initialized! \n");
+
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
 	glutInitWindowSize(gWinWidth, gWinHeight);
 	glutCreateWindow("DeepMimic");
+	printf("glut Window Created! \n");
 }
 
 void SetupDraw()

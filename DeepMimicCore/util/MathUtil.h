@@ -1,10 +1,15 @@
 #pragma once
 
 #include <random>
-
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "Eigen/Dense"
 #include "Eigen/StdVector"
 #include "Rand.h"
+
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 
 const int gInvalidIdx = -1;
 
