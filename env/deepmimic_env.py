@@ -38,8 +38,8 @@ class DeepMimicEnv(Env):
     def mouse_click(self, button, state, x, y):
         self._core.MouseClick(button, state, x, y)
 
-    def mouse_move(self, x, y):
-        self._core.MouseMove(x, y)
+    def mouse_move(self, x, y, mouse_mod):
+        self._core.MouseMove(x, y, mouse_mod)
 
     def reshape(self, w, h):
         self._core.Reshape(w, h)

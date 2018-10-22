@@ -93,9 +93,9 @@ void cDrawSceneSimChar::MouseClick(int button, int state, double x, double y)
 	}
 }
 
-void cDrawSceneSimChar::MouseMove(double x, double y)
+void cDrawSceneSimChar::MouseMove(double x, double y, int mod)
 {
-	cDrawScene::MouseMove(x, y);
+	cDrawScene::MouseMove(x, y, mod);
 
 	if (ObjectSelected())
 	{

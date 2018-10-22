@@ -106,12 +106,12 @@ void cDeepMimicCore::MouseClick(int button, int state, int x, int y)
 	mScene->MouseClick(button, state, device_x, device_y);
 }
 
-void cDeepMimicCore::MouseMove(int x, int y)
+void cDeepMimicCore::MouseMove(int x, int y, int mod)
 {
 	double device_x = 0;
 	double device_y = 0;
 	CalcDeviceCoord(x, y, device_x, device_y);
-	mScene->MouseMove(device_x, device_y);
+	mScene->MouseMove(device_x, device_y, mod);
 }
 
 void cDeepMimicCore::Reshape(int w, int h)

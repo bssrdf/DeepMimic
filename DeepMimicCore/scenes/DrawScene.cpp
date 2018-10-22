@@ -60,10 +60,10 @@ void cDrawScene::MouseClick(int button, int state, double x, double y)
 	mCamera.MouseClick(button, state, x, y);
 }
 
-void cDrawScene::MouseMove(double x, double y)
+void cDrawScene::MouseMove(double x, double y, int mod)
 {
-	cScene::MouseMove(x, y);
-	mCamera.MouseMove(x, y);
+	cScene::MouseMove(x, y, mod);
+	mCamera.MouseMove(x, y, mod);
 }
 
 void cDrawScene::EnableDrawInfo(bool enable)

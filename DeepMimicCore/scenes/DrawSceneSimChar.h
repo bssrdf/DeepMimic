@@ -21,7 +21,7 @@ public:
 	virtual const std::shared_ptr<cSceneSimChar>& GetScene() const;
 	
 	virtual void MouseClick(int button, int state, double x, double y);
-	virtual void MouseMove(double x, double y);
+	virtual void MouseMove(double x, double y, int mod);
 	virtual void Keyboard(unsigned char key, double device_x, double device_y);
 	
 	virtual double GetTime() const;

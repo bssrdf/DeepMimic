@@ -61,7 +61,7 @@ void cScene::MouseClick(int button, int state, double device_x, double device_y)
 {
 }
 
-void cScene::MouseMove(double device_x, double device_y)
+void cScene::MouseMove(double device_x, double device_y, int mod)
 {
 }
 

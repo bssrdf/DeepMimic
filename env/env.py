@@ -39,7 +39,7 @@ class Env(ABC):
     def mouse_click(self, button, state, x, y):
         pass
 
-    def mouse_move(self, x, y):
+    def mouse_move(self, x, y, mouse_mod):
         pass
 
     def reshape(self, w, h):

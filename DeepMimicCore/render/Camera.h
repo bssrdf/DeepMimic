@@ -60,7 +60,7 @@ public:
 	virtual tVector GetRayCastDir(const tVector& pos) const;
 
 	virtual void MouseClick(int button, int state, double x, double y);
-	virtual void MouseMove(double x, double y);
+	virtual void MouseMove(double x, double y, int mod);
 
 protected:
 	eProj mProj;

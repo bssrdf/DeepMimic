@@ -299,11 +299,12 @@ void cCamera::MouseClick(int button, int state, double x, double y)
 	}
 }
 
-void cCamera::MouseMove(double x, double y)
+void cCamera::MouseMove(double x, double y, int mod)
 {
 	if (mMouseDown)
 	{
-		int mouse_mod = glutGetModifiers();
+		//int mouse_mod = glutGetModifiers();
+		int mouse_mod = mod;
 		double w = GetWidth();
 		double h = GetHeight();
 

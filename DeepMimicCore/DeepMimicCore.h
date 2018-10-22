@@ -25,7 +25,7 @@ public:
 	virtual void Draw();
 	virtual void Keyboard(int key, int x, int y);
 	virtual void MouseClick(int button, int state, int x, int y);
-	virtual void MouseMove(int x, int y);
+	virtual void MouseMove(int x, int y, int mod);
 	virtual void Reshape(int w, int h);
 
 	virtual void Shutdown();

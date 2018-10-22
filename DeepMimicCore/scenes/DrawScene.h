@@ -27,7 +27,7 @@ public:
 	virtual void Draw();
 
 	virtual void MouseClick(int button, int state, double device_x, double device_y);
-	virtual void MouseMove(double device_x, double device_y);
+	virtual void MouseMove(double device_x, double device_y, int mod);
 
 	virtual void EnableDrawInfo(bool enable);
 

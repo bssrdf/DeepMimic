@@ -258,7 +258,8 @@ def mouse_click(button, state, x, y):
     glutPostRedisplay()
 
 def mouse_move(x, y):
-    world.env.mouse_move(x, y)
+    mouse_mod = glutGetModifiers()
+    world.env.mouse_move(x, y, mouse_mod)
     glutPostRedisplay()
     
     return
